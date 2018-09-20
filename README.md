@@ -1,4 +1,4 @@
 # SE100-Homework1
-My first Markdown
+## My first Markdown
 
-Test commit
+### Test commit
