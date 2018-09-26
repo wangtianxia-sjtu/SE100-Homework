@@ -35,3 +35,4 @@ npm can be also used to install Vue.js. For more details, please refer to [Vue.j
     * use JavaScript to directly manipulate the DOM during transition hooks
     * integrate third-party JavaScript animation libraries, such as Velocity.js
 
+### Pros and cons
