@@ -1,7 +1,7 @@
 SE100-Homework1
 ========================
 ## Vue.js - A Progressive JavaScript Framework
-### Brief Introduction
+### Brief Introduction to Vue.js
 Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic (庞大僵化的) frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
 
 An easy way to experience Vue.js is to include it in the HTML file.
@@ -35,4 +35,13 @@ npm can be also used to install Vue.js. For more details, please refer to [Vue.j
     * use JavaScript to directly manipulate the DOM during transition hooks
     * integrate third-party JavaScript animation libraries, such as Velocity.js
 
-### Pros and cons
+### Advantages and Disadvantages compared with the technology stack before
+In this section, I will talk about some personal feelings while learning Vue.js as a beginner.
+* Advantages
+
+    * Abstraction
+
+        Compared with the technology stack I had before (html+js), I think Vue.js is at a higher abstract level. It doesn't matter if you don't know how it actually works at low level while using Vue.js. To some extent, it is like a car with a automatic transmission if the former technology stack is a car with a manual transmission. Higher abstraction is essential in application-level programming.
+    * Useful wheels
+
+        In Vue.js, many useful features or wheels are integrated, which can accelerate my development process if I can have a full command of it (not yet). For example, the feature 'v-' is a powerful tool, which can save me a lot of codes if I can use it properly.
