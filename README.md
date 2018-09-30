@@ -25,6 +25,7 @@ npm can be also used to install Vue.js. For more details, please refer to [Vue.j
     One of Vue’s most distinctive features is the unobtrusive reactivity system. Models are just plain JavaScript objects. When you modify them, the view updates. It makes state management very simple and intuitive. Vue provides optimized re-rendering out of the box without you having to do anything. Each component keeps track of its reactive dependencies during its render, so the system knows precisely when to re-render, and which components to re-render.
 * Components
     
+    ![image](./components.png)
     Components are one of the most powerful features of Vue. In a large application, it is necessary to divide the whole app into small, self-contained, and often reusable components to make development manageable. Components extend basic HTML elements to encapsulate (封装) reusable code. At a high level, components are custom elements to which the Vue’s compiler attaches behavior. In Vue, a component is essentially a Vue instance with pre-defined options.
 
 * Transitions
@@ -35,6 +36,10 @@ npm can be also used to install Vue.js. For more details, please refer to [Vue.j
     * integrate third-party CSS animation libraries, such as Animate.css
     * use JavaScript to directly manipulate the DOM during transition hooks
     * integrate third-party JavaScript animation libraries, such as Velocity.js
+* Life cycle
+
+    ![image](./lifecycle.png)
+    Each Vue instance goes through a series of initialization steps when it’s created - for example, it needs to set up data observation, compile the template, mount the instance to the DOM, and update the DOM when data changes. Along the way, it also runs functions called lifecycle hooks, giving users the opportunity to add their own code at specific stages.
 
 ### Advantages and Disadvantages compared with the technology stack before
 In this section, I will talk about some personal feelings while learning Vue.js as a beginner.
@@ -46,9 +51,15 @@ In this section, I will talk about some personal feelings while learning Vue.js 
     * Useful wheels
 
         In Vue.js, many useful features or wheels are integrated, which can accelerate my development process if I can have a full command of it (not yet). For example, the feature 'v-' is a powerful tool, which can save me a lot of codes if I can use it properly.
+    * Rich Documentation
+
+        Vue.js has an official Chinese website, which contains a detailed tutorial of Vue.js. The official tutorial can serve as a powerful tool when someone is learning such front-end techhnologies.
 * Disadvantages
 
     * Steep learing curve at beginning
 
         A relatively easy way to use Vue.js is to simply include it in the html file. Even so, it is hard for me to get used to it (compared with raw html+js). If someone install Vue.js using npm and webpack, he might be scared by so many folders and files pre-installed in the project. It takes time to get used to this new technology stack and I am still at this stage.
+    * Performance (still have doubt)
+        
+        This disadvantage is just a personal feeling and almost no one has raised similar issue in Vue.js community. When I was migrating my Word Ladder project to Vue.js, I found it really slow when compiling the js file which contains the whole dictionary. Maybe it was because I simply stored the dictionary in a js array. However, by using raw html+js, there's no such problem.
 
