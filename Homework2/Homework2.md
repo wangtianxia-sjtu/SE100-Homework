@@ -1,10 +1,13 @@
 Native, Web and Hybrid Apps
 ==========================
+![image](./HTML5-Vs-Native-Vs-Hybrid-Apps.png)
 ## General Comparison
 Native and hybrid apps are installed in an app store, whereas web apps are webpages that look like an app. Both hybrid and web apps render HTML web pages, but hybrid apps use app-embedded browsers to do that.
+![image](./native-web-hybrid.png)
 
 ## Native Apps
 Native apps live on the device and are accessed through icons on the device home screen. Native apps are installed through an application store (such as Google Play or Apple’s App Store). They are developed specifically for one platform.
+![image](./native-app-development.png)
 ### *Advantages*
 * **Native apps can use all the device features.**
 
@@ -33,6 +36,7 @@ Native apps live on the device and are accessed through icons on the device home
 Web apps are not real applications; they are really websites that, in many ways, look and feel like native applications, but are not implemented as such. According to Wikipedia, a web app “is an application that is accessed via a web browser over a network such as the Internet.” They are run by a browser and typically written in HTML5. Users first access them as they would access any web page: they navigate to a special URL and then have the option of “installing” them on their home screen by creating a bookmark to that page.
 
 Web apps became really popular when HTML5 came around and people realized that they can obtain native-like functionality in the browser. Today, as more and more sites use HTML5, the distinction between web apps and regular web pages has become blurry.
+![image](./web-application-solutions.png)
 ### *Advantages*
 * **Web apps is relatively easy to develop and maintain.**
     
@@ -56,6 +60,7 @@ Web apps became really popular when HTML5 came around and people realized that t
 Hybrid apps are part native apps, part web apps. (Because of that, many people incorrectly call them “web apps”). Like native apps, they live in an app store and can take advantage of the many device features available. Like web apps, they rely on HTML being rendered in a browser, with the caveat that the browser is embedded within the app.
 
 Often, companies build hybrid apps as wrappers for an existing web page; in that way, they hope to get a presence in the app store, without spending significant effort for developing a different app. Hybrid apps are also popular because they allow crossplatform development and thus significantly reduce development costs: that is, the same HTML code components can be reused on different mobile operating systems. Tools such as PhoneGap and Sencha Touch allow people to design and code across platforms, using the power of HTML.
+![image](./hybrid.png)
 ### *Advantages*
 * **Hybrid Apps still have access to device features.**
     
@@ -72,6 +77,14 @@ Often, companies build hybrid apps as wrappers for an existing web page; in that
 * **The user experience of the app will suffer.**
 
     iOS and Android users tend to be very loyal to their platforms, and since they have been using them for years, they are used to how things work in native apps.The differences are subtle but can be frustrating for app users. By building a hybrid app, it will not be able to please both camps. Try too hard to customize the app based on the platform and it may end up costing the same as two native apps.
+### *Comparison between native and hybrid apps*
+![image](./native-hybrid.png)
+![image](./native-hybrid-diff.png)
+## Summary
+![image](./7factors.png)
+![image](./tech_stack.png)
+### *A Decision Tree*
+![image](./outsystems-native-web-hybrid-infographic-l.png)
 ## Reference
 
     1. https://www.mobiloud.com/blog/native-web-or-hybrid-apps/
@@ -83,3 +96,5 @@ Often, companies build hybrid apps as wrappers for an existing web page; in that
     4. https://www.joshmorony.com/wp-content/uploads/2014/01/nativewebhybrid.png
 
     5. http://www.htmlpanda.com/blog/wp-content/uploads/2014/04/HTML5-Vs-Native-Vs-Hybrid-Apps.png
+
+    6. https://www.nandaabiz.com/wp-content/uploads/2015/05/outsystems-native-web-hybrid-infographic-l.jpg
