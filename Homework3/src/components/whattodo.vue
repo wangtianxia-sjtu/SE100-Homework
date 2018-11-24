@@ -1,20 +1,20 @@
 <template>
   <div class="todolist">
-    <el-dialog title="Add something" :visible.sync="dialogFormVisible">
+  <el-dialog title="Add something" :visible.sync="dialogFormVisible">
   <el-form :model="form">
     <el-form-item label="Title" placeholder="Describe it in a few words" :label-width="formLabelWidth">
-      <el-input v-model="form.name" autocomplete="off"></el-input>
+      <el-input v-model="form.title" autocomplete="off" placeholder="Describe it in a few words"></el-input>
     </el-form-item>
     <el-form-item label="Detail" placeholder="Describe it in detail" :label-width="formLabelWidth">
-      <el-input type="textarea" autosize v-model="form.detail"></el-input>
+      <el-input type="textarea" autosize v-model="form.detail" placeholder="Describe it in detail"></el-input>
     </el-form-item>
     <el-form-item label="Deadline" placeholder="Deadline?" :label-width="formLabelWidth">
-    <el-date-picker v-model="form.date" type="datetime" style={padding:50px}></el-date-picker>
+    <el-date-picker v-model="form.date" type="datetime" style={padding:50px} placeholder="Deadline?"></el-date-picker>
     </el-form-item>
   </el-form>
   <div slot="footer" class="dialog-footer">
-    <el-button @click="dialogFormVisible = false">取 消</el-button>
-    <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+    <el-button @click="dialogFormVisible = false">Cancel</el-button>
+    <el-button type="primary" @click="confirmation">Confirm</el-button>
   </div>
 </el-dialog>
     <Layout :style="{background: '#fff',height: '100%'}">
@@ -24,17 +24,19 @@
         </p>
       </Header>
       <Content>
-        <el-button plain style="margin:10px" @click="dialogFormVisible = true"> Click me to add some todos </el-button>
+        <el-button plain style="margin:10px" @click="addsomething"> Click me to add some todos </el-button>
         <Row>
           <Col span="12">
             <h3>
               Things to be done...
             </h3>
+          <todocards :todo="todo" :done="tobedone"></todocards>
           </Col>
           <Col span="12">
             <h3>
               What you have already done...
             </h3>
+          <todocards :todo="todo" :done="alreadydone"></todocards>
           </Col>
         </Row>
         <Row>
@@ -52,19 +54,38 @@
 </template>
 
 <script>
+import todocards from '@/components/todocards.vue'
 export default {
   name: 'whattodo',
   data () {
     return {
       dialogFormVisible: false,
+      tobedone: false,
+      alreadydone: true,
       form: {
-        name: '',
-        region: '',
+        title: '',
         date: '',
         detail: ''
       },
-      formLabelWidth: '120px'
+      formLabelWidth: '120px',
+      todo: []
     }
+  },
+  methods: {
+    confirmation () {
+      this.dialogFormVisible = false
+      this.todo.push({title: this.form.title, date: this.form.date, detail: this.form.detail, done: false})
+      console.log(this.todo)
+    },
+    addsomething () {
+      this.dialogFormVisible = true
+      this.form.title = ''
+      this.form.date = ''
+      this.form.detail = ''
+    }
+  },
+  components: {
+    todocards
   }
 }
 </script>
