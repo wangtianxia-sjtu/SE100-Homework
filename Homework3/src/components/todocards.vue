@@ -2,12 +2,14 @@
 <div width="100%">
 <div width="100%" v-for="(thing,index) in todo" :key="thing.title">
 <transition name="el-fade-in-linear">
-<el-card class="box-card" v-show="thing.done==done">
+<el-card class="box-card" v-show="thing.done==done" shadow="hover">
   <div slot="header" class="clearfix">
     <h3>{{thing.title}}</h3>
   </div>
   <div class="text item">
-    {{'Deadline: '+thing.date}}<br><br>
+    {{'Deadline: '+thing.date}}
+  </div>
+  <div class="text item" v-show="thing.detail!=''">
     {{'Detail: '+thing.detail}}
   </div>
   <el-button v-show="thing.done==false" @click="thing.done=true" style="float: right; margin-bottom: 15px;" type="primary">Done</el-button>
@@ -47,8 +49,6 @@ export default {
 
   .box-card {
     width: 90%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin: 5%;
   }
 </style>
