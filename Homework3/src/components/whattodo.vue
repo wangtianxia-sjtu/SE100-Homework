@@ -18,21 +18,21 @@
   </div>
 </el-dialog>
     <Layout :style="{background: '#fff',height: '100%'}">
-      <Header :style="{background: '#000'}">
+      <Header :style="{background: '#000'}" class="header">
         <p style="font-size:30px;color:#fff;margin-left:0%;">
         A naïve todo list written by Vue.js
         </p>
       </Header>
       <Content>
-        <el-button plain style="margin:10px" @click="addsomething"> Click me to add some todos </el-button>
+        <el-button style="margin:10px" @click="addsomething"> Click me to add some todos </el-button>
         <Row>
-          <Col span="12">
+          <Col span="12" class="tobedone">
             <h2>
               Things to be done...
             </h2>
           <todocards :todo="todo" :done="tobedone"></todocards>
           </Col>
-          <Col span="12">
+          <Col span="12" class="alreadydone">
             <h2>
               What you have already done...
             </h2>
@@ -46,7 +46,7 @@
           </Col>
         </Row>
       </Content>
-      <Footer>
+      <Footer class="footer">
         SE100 Homework3 2018 © Wang Tianxia
       </Footer>
     </Layout>
