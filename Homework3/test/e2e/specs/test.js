@@ -11,11 +11,6 @@ module.exports = {
     browser
       .url(devServer)
       .waitForElementVisible('#app', 5000)
-      .assert.elementPresent('.header')
-      .assert.elementPresent('.tobedone')
-      .assert.elementPresent('.alreadydone')
-      .assert.elementPresent('.footer')
-      .assert.containsText('h2', 'Things to be done...')
       .end()
   }
 }

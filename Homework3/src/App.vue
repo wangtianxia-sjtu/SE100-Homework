@@ -5,11 +5,11 @@
     <el-form-item label="Title" placeholder="Describe it in a few words" :label-width="formLabelWidth">
       <el-input v-model="form.title" autocomplete="off" placeholder="Describe it in a few words"></el-input>
     </el-form-item>
-    <el-form-item label="Detail (optional)" placeholder="Describe it in detail" :label-width="formLabelWidth">
-      <el-input type="textarea" autosize v-model="form.detail" placeholder="Describe it in detail"></el-input>
+    <el-form-item label="Deadline" placeholder="Describe it in detail" :label-width="formLabelWidth">
+      <el-date-picker v-model="form.date" style="float:left" type="datetime" placeholder="Deadline?"></el-date-picker>
     </el-form-item>
-    <el-form-item label="Deadline" placeholder="Deadline?" :label-width="formLabelWidth">
-    <el-date-picker v-model="form.date" type="datetime" style={padding:50px;margin-left:-54%;} placeholder="Deadline?"></el-date-picker>
+    <el-form-item label="Detail (optional)" placeholder="Deadline?" :label-width="formLabelWidth">
+    <el-input type="textarea" autosize v-model="form.detail" placeholder="Describe it in detail"></el-input>
     </el-form-item>
   </el-form>
   <div slot="footer" class="dialog-footer">
@@ -28,7 +28,7 @@
         </p>
         </Col>
         <Col span='12'>
-        <el-button style="float:right;margin-top:2%;margin-right:-5%" @click="addsomething"><Icon type="md-add"/> New </el-button>
+        <el-button class="new_button" style="float:right;margin-top:2%;margin-right:-5%" @click="addsomething"><Icon type="md-add"/> New </el-button>
         </Col>
         </Row>
   </Header>

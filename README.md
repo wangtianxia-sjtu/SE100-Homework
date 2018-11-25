@@ -28,7 +28,7 @@ npm run build --report
 # run unit tests
 npm run unit
 
-# run e2e tests, chrome is needed
+# run e2e tests, chrome and java is needed (only a simple test)
 npm run e2e
 
 # run all tests
