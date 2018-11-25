@@ -2,7 +2,7 @@
 <div width="100%">
 <div width="100%" v-for="(thing,index) in todo" :key="thing.title">
 <transition name="el-fade-in-linear">
-<el-card class="box-card" v-show="thing.done==done" shadow="hover">
+<el-card class="box-card" v-show="(index%2)==odd&&thing.importance==true" shadow="hover">
   <div slot="header" class="clearfix">
     <h3>{{thing.title}}</h3>
   </div>
@@ -25,8 +25,8 @@
 
 <script>
 export default {
-  name: 'todocards',
-  props: ['todo', 'done']
+  name: 'importantcards',
+  props: ['todo', 'odd']
 }
 </script>
 
