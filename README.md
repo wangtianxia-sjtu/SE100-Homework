@@ -6,7 +6,7 @@ Homework1: Prepare a Markdown  file to introduce Vue.js.
 
 Homework2: A technical report about native, web, and hybrid app.
 
-Homework3: A simple Vue.js project (todo list), involving different domains of technical stack.
+Homework3: A simple Vue.js project (todo list), involving different domains of technical stack. Deployment can be accessed at [here](https://wangtianxia-sjtu.github.io/SE100-Homework/#/).
 
 Usage:
 
